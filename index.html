@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rstubryan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-[#4FB2A1] text-center px-8 py-4 drop-shadow-xl sticky top-0 text-white text-xl">
+        <a href="index.html" class="active lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="cv.pdf" download="cv.pdf" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-download"></i> Download CV</a>
+        <a href="contact.html" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-phone"></i> Contact</a>
+        <a href="about.html" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-user"></i> About me</a>
+        <a href="javascript:void(0);" class="icon lg:px-10" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <section>
+        <div class="flex flex-col items-center py-32" style="background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);">
+            <img src="img/img.jpg" class="py-2 px-1 rounded-full">
+            <h1 class="font-bold py-1">Restu Bumi Ryan Ramadhan</h1>
+            <p class="px-1">Husbunya Dina</p>
+        </div>        
+        <article class="text-center text-white">
+            <div class="bg-[#4FB2A1] py-6">
+                <h2 class="font-bold text-2xl">Overview</h2>
+                <p class="py-1">Saya adalah mahasiswa prodi Teknik Informatika Universitas Nusa Putra dan ayangnya Dina</p>
+            </div>
+
+            <div class="bg-[#44b09e] py-9">
+                <table class="mx-auto table-auto border-spacing-2 text-center">
+                    <thead>
+                        <tr>
+                            <th class="border border-green-700 bg-[#38a391]">Skill</th>
+                            <th class="border border-green-700 bg-[#38a391]">Pengalaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-green-700 bg-[#4FB2A1]">HTML</td>
+                            <td class="border border-green-700 bg-[#4FB2A1]">1 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-green-700 bg-[#4FB2A1]">CSS</td>
+                            <td class="border border-green-700 bg-[#4FB2A1]">1 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-green-700 bg-[#4FB2A1]">Tailwind CSS</td>
+                            <td class="border border-green-700 bg-[#4FB2A1]">1 minggu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  
+              <div class="bg-[#44b09e] py-8">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos non illum ducimus vero obcaecati doloremque repellat accusamus dolorum ut possimus. Et atque, autem ex sunt blanditiis corporis id mollitia sit?</p>
+              </div>
+        </article>
+    </section>
+    <footer class="text-center bg-[#38a391] text-white font-bold py-4">
+        <p>&copy; 2023 @rstubryan</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "") {
+            x.className += " responsive";
+        } else {
+            x.className = "";
+        }
+        }
+    </script>
+</body>
+</html>

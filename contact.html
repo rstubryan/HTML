@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rstubryan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-[#4FB2A1] text-center px-8 py-4 drop-shadow-xl sticky top-0 text-white text-xl">
+        <a href="index.html" class="active lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="cv.pdf" download="cv.pdf" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-download"></i> Download CV</a>
+        <a href="contact.html" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-phone"></i> Contact</a>
+        <a href="about.html" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-user"></i> About me</a>
+        <a href="javascript:void(0);" class="icon lg:px-10" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="bg-[#44b09e]">
+        <header>
+            <h1 class="text-center text-2xl font-bold py-4 text-white">Contact</h1>
+        </header>
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white px-4 py-2 text-center">E-mail anda :</label>
+        <input type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 mx-auto text-center dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="emailmu@gmail.com">
+        <label for="large-input" class="px-4 py-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white text-center">Pesan :</label>
+        <input type="text" id="large-input" class="block w-96 p-4 text-sm text-center text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 mx-auto">
+    </div>
+    
+        <div class="bg-[#44b09e] py-4">
+            <button type="submit" class="text-white hover:text-black bg-[#38a391] hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm mx-auto block px-5 py-2.5">Submit</button>
+        </div>
+        <footer class="text-center bg-[#38a391] text-white font-bold py-4">
+            <p>&copy; 2023 @rstubryan</p>
+        </footer>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "") {
+            x.className += " responsive";
+        } else {
+            x.className = "";
+        }
+        }
+    </script>
+</body>
+</html>

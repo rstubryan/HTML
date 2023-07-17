@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rstubryan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-[#4FB2A1] text-center px-8 py-4 drop-shadow-xl sticky top-0 text-white text-xl">
+        <a href="index.html" class="active lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="cv.pdf" download="cv.pdf" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-download"></i> Download CV</a>
+        <a href="contact.html" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-phone"></i> Contact</a>
+        <a href="about.html" class="lg:px-10 text-white hover:text-black"><i class="fa fa-fw fa-user"></i> About me</a>
+        <a href="javascript:void(0);" class="icon lg:px-10" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="bg-[#44b09e]">
+        <header>
+            <h1 class="text-center text-2xl font-bold py-4 text-white">About me</h1>
+    </div>
+
+    <section>
+        <article>
+            <p class="bg-[#44b09e] text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus delectus eaque. Facilis, in animi explicabo asperiores ipsum eligendi laudantium corporis alias odit repellat doloribus, deserunt, iste maiores neque ipsam?</p>
+        </article>
+    </section>
+
+    <video controls class="mx-auto justify-center items-center bg-[#44b09e] px-96 py-8">
+        <source src="vid/3.mp4" type="video/mp4">
+    </video>
+
+    <footer class="text-center bg-[#38a391] text-white font-bold py-4">
+        <p>&copy; 2023 @rstubryan</p>
+    </footer>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "") {
+            x.className += " responsive";
+        } else {
+            x.className = "";
+        }
+        }
+    </script>
+</body>
+</html>
