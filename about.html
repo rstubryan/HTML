@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rstubryan</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="index.html" class="href">Home</a> |
-            <a href="cv.pdf" download="cv.pdf">Download CV</a> |
-            <a href="contact.html" class="href">Contact</a> |
-            <a href="about.html" class="hre">About me</a>
-        </ul>
-        <hr>
+    <nav id="nav">
+        <a href="index.html" class="active"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="cv.pdf" download="cv.pdf"><i class="fa fa-fw fa-download"></i> Download CV</a>
+        <a href="contact.html"><i class="fa fa-fw fa-phone"></i> Contact</a>
+        <a href="about.html"><i class="fa fa-fw fa-user"></i> About me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
     <header>
         <h1>About me</h1>
@@ -24,11 +26,21 @@
             <p class="abt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus delectus eaque. Facilis, in animi explicabo asperiores ipsum eligendi laudantium corporis alias odit repellat doloribus, deserunt, iste maiores neque ipsam?</p>
         </article>
     </section>
-    <video controls="vid/3.mp4">
+    <video controls>
         <source src="vid/3.mp4" type="video/mp4">
     </video>
     <footer>
         <p>&copy; 2023 @rstubryan</p>
     </footer>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "") {
+            x.className += " responsive";
+        } else {
+            x.className = "";
+        }
+        }
+    </script>
 </body>
 </html>
